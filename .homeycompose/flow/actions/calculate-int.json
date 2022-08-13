@@ -1,0 +1,33 @@
+{
+  "title": {
+    "en": "Calculate a number",
+    "de": "Berechnen Sie einen Zahl"
+  },
+  "titleFormatted": {
+    "en": "Calculate [[formula]] as a number",
+    "de": "Berechne [[formula]] als Zahl"
+  },
+  "hint": {
+    "en": "Enter a mathematical expression.",
+    "de": "Geben Sie einen mathematischen Ausdruck ein."
+  },
+  "args": [
+    {
+      "type": "text",
+      "name": "formula",
+      "placeholder": {
+        "en": "10*(10+10)"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "name": "result",
+      "type": "number",
+      "title": {
+        "en": "Result number",
+        "de": "Ergebnis Zahl"
+      }
+    }
+  ]
+}

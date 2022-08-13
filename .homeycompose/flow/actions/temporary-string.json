@@ -1,0 +1,29 @@
+{
+  "title": {
+    "en": "Temporary Text-Tag",
+    "de": "Temporärer Text-Tag"
+  },
+  "titleFormatted": {
+    "en": "Create temporary text variable [[string]]",
+    "de": "Temporäre Textvariable [[string]] erstellen"
+  },
+  "args": [
+    {
+      "type": "text",
+      "name": "string",
+      "placeholder": {
+        "en": "Hello!",
+        "de": "Hallo!"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "name": "result",
+      "type": "string",
+      "title": {
+        "en": "Temporary text"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": {
+    "en": "Temporary Number-Tag",
+    "de": "Temporärer Nummern-Tag"
+  },
+  "titleFormatted": {
+    "en": "Create temporary number variable [[number]]",
+    "de": "Temporäre Zahlenvariable [[number]] erstellen"
+  },
+  "args": [
+    {
+      "type": "number",
+      "name": "number",
+      "placeholder": {
+        "en": "10"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "name": "result",
+      "type": "number",
+      "title": {
+        "en": "Temporary number",
+        "de": "Temporäre Zahlenvariable"
+      }
+    }
+  ]
+}

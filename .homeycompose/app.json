@@ -1,0 +1,57 @@
+{
+  "id": "com.spkes.temporaryVariables",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#0db53a",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Temporary Variables",
+    "de": "Temporäre Variablen"
+  },
+  "description": {
+    "en": "Temporary variables that only exist for the duration that the flow runs.",
+    "de": "Temporäre Variablen, die nur für die Dauer des Flows verfügbar ist."
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Julian Suhl",
+    "email": "julian@suhl.de"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "spkesDE",
+        "email": "spkes@spkes.de"
+      }
+    ],
+    "translators": [
+      {
+        "name": "spkesDE"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "spikes022"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/spkesDE/TelegramNotifications/issues"
+  },
+  "source": "https://github.com/spkesDE/TelegramNotifications",
+  "support": "https://github.com/spkesDE",
+  "homeyCommunityTopicId": 66622
+}

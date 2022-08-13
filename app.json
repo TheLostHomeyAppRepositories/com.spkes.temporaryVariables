@@ -1,0 +1,190 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.spkes.temporaryVariables",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#0db53a",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Temporary Variables",
+    "de": "Temporäre Variablen"
+  },
+  "description": {
+    "en": "Temporary variables that only exist for the duration that the flow runs.",
+    "de": "Temporäre Variablen, die nur für die Dauer des Flows verfügbar ist."
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Julian Suhl",
+    "email": "julian@suhl.de"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "spkesDE",
+        "email": "spkes@spkes.de"
+      }
+    ],
+    "translators": [
+      {
+        "name": "spkesDE"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "spikes022"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/spkesDE/TelegramNotifications/issues"
+  },
+  "source": "https://github.com/spkesDE/TelegramNotifications",
+  "support": "https://github.com/spkesDE",
+  "homeyCommunityTopicId": 66622,
+  "flow": {
+    "actions": [
+      {
+        "title": {
+          "en": "Calculate a float",
+          "de": "Berechnen Sie einen Komma Zahl"
+        },
+        "titleFormatted": {
+          "en": "Calculate [[formula]] as a float",
+          "de": "Berechne [[formula]] als Komma Zahl"
+        },
+        "hint": {
+          "en": "Enter a mathematical expression.",
+          "de": "Geben Sie einen mathematischen Ausdruck ein."
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "formula",
+            "placeholder": {
+              "en": "10.47*(10.11+10)"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "result",
+            "type": "number",
+            "title": {
+              "en": "Result float",
+              "de": "Ergebnis Komma Zahl"
+            }
+          }
+        ],
+        "id": "calculate-float"
+      },
+      {
+        "title": {
+          "en": "Calculate a number",
+          "de": "Berechnen Sie einen Zahl"
+        },
+        "titleFormatted": {
+          "en": "Calculate [[formula]] as a number",
+          "de": "Berechne [[formula]] als Zahl"
+        },
+        "hint": {
+          "en": "Enter a mathematical expression.",
+          "de": "Geben Sie einen mathematischen Ausdruck ein."
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "formula",
+            "placeholder": {
+              "en": "10*(10+10)"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "result",
+            "type": "number",
+            "title": {
+              "en": "Result number",
+              "de": "Ergebnis Zahl"
+            }
+          }
+        ],
+        "id": "calculate-int"
+      },
+      {
+        "title": {
+          "en": "Temporary Number-Tag",
+          "de": "Temporärer Nummern-Tag"
+        },
+        "titleFormatted": {
+          "en": "Create temporary number variable [[number]]",
+          "de": "Temporäre Zahlenvariable [[number]] erstellen"
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "number",
+            "placeholder": {
+              "en": "10"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "result",
+            "type": "number",
+            "title": {
+              "en": "Temporary number",
+              "de": "Temporäre Zahlenvariable"
+            }
+          }
+        ],
+        "id": "temporary-number"
+      },
+      {
+        "title": {
+          "en": "Temporary Text-Tag",
+          "de": "Temporärer Text-Tag"
+        },
+        "titleFormatted": {
+          "en": "Create temporary text variable [[string]]",
+          "de": "Temporäre Textvariable [[string]] erstellen"
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "string",
+            "placeholder": {
+              "en": "Hello!",
+              "de": "Hallo!"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "result",
+            "type": "string",
+            "title": {
+              "en": "Temporary text"
+            }
+          }
+        ],
+        "id": "temporary-string"
+      }
+    ]
+  }
+}
