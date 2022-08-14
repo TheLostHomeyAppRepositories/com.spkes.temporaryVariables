@@ -22,7 +22,8 @@
       "name": "result",
       "type": "string",
       "title": {
-        "en": "Temporary text"
+        "en": "Temporary text",
+        "de": "Temporäre text"
       }
     }
   ]

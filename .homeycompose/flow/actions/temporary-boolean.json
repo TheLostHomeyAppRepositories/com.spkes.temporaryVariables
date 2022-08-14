@@ -1,0 +1,30 @@
+{
+  "title": {
+    "en": "Temporary Boolean-Tag",
+    "de": "Temporärer Ja/Nein-Tag"
+  },
+  "titleFormatted": {
+    "en": "Create temporary boolean variable [[boolean]]",
+    "de": "Temporäre Ja/Nein Variable [[boolean]] erstellen"
+  },
+  "args": [
+    {
+      "type": "checkbox",
+      "name": "boolean",
+      "placeholder": {
+        "en": "true",
+        "de": "Ja"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "name": "result",
+      "type": "boolean",
+      "title": {
+        "en": "Temporary boolean",
+        "de": "Temporäre Ja/Nein Variable"
+      }
+    }
+  ]
+}

@@ -15,7 +15,6 @@ class TemporaryVariables extends Homey.App {
                 this.error(args.formula + " is not a mathematical expression")
                 throw new Error(args.formula + " is not a mathematical expression");
             }
-            console.log(state);
             return {
                 result: resultCalc
             }
@@ -41,6 +40,12 @@ class TemporaryVariables extends Homey.App {
         this.homey.flow.getActionCard('temporary-string').registerRunListener((args, state) => {
             return {
                 result: args.string
+            }
+        });
+
+        this.homey.flow.getActionCard('temporary-boolean').registerRunListener((args, state) => {
+            return {
+                result: args.boolean
             }
         });
 
