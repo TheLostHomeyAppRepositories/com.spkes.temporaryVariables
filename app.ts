@@ -11,9 +11,11 @@ class TemporaryVariables extends Homey.App {
 
         this.homey.flow.getActionCard('calculate-float').registerRunListener((args, state) => {
             let resultCalc = evaluator.evaluate(args.formula.replace(",", "."));
-            if(resultCalc == Evaluator.INVALID_NUMBER) {
+            if (resultCalc == Evaluator.INVALID_NUMBER) {
                 this.error(args.formula + " is not a mathematical expression")
+                throw new Error(args.formula + " is not a mathematical expression");
             }
+            console.log(state);
             return {
                 result: resultCalc
             }
@@ -21,8 +23,9 @@ class TemporaryVariables extends Homey.App {
 
         this.homey.flow.getActionCard('calculate-int').registerRunListener((args, state) => {
             let resultCalc = evaluator.evaluate(args.formula.replace(",", "."), true);
-            if(resultCalc == Evaluator.INVALID_NUMBER) {
+            if (resultCalc == Evaluator.INVALID_NUMBER) {
                 this.error(args.formula + " is not a mathematical expression")
+                throw new Error(args.formula + " is not a mathematical expression");
             }
             return {
                 result: resultCalc
